@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://use.fontawesome.com/6fac2730d4.js"></script>
+    <title>Photgraphy</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="heading">
+          <h4>Photography.</h4>
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="title">
+          <p>
+            Click For Your Shoot
+          </p>
+          <h3>
+            PHOTOGRAPHY.
+          </h3>
+        </div>
+        <div class="footer">
+          <p>
+            Journey Everywhere
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="title">
+          <h3>
+            Registration
+          </h3>
+          <p>
+            CLICK FOR YOUR SHOOT
+          </p>
+        </div>
+        <div class="formbox">
+          <form class="form" action="">
+            <div class="formElement">
+              <label for="name" class="label" id="name">Name</label>
+              <input
+                type="text"
+                placeholder="John Doe"
+                class="input"
+                value=""
+                onfocusin="changeLabelColor('name', this)"
+                onfocusout="removeLabelColor('name', this)"
+                onkeyup="changeFont(this)"
+              />
+            </div>
+            <div class="formElement">
+              <label for="email" class="label" id="email">Email</label>
+              <input
+                type="email"
+                placeholder="John@doe.com"
+                class="input"
+                value=""
+                onfocusin="changeLabelColor('email', this)"
+                onfocusout="removeLabelColor('email', this)"
+                onkeyup="changeFont(this)"
+              />
+            </div>
+            <div class="formElement">
+              <label for="gender" class="label" id="gender">Gender</label>
+              <div class="input blankdiv">
+                <input
+                  type="radio"
+                  name="gender"
+                  class="radio male"
+                  id="male"
+                  value="male"
+                />
+                <label for="male" class="labelmale" onclick="check('male')"
+                  >Male</label
+                >
+                <input
+                  type="radio"
+                  name="gender"
+                  class="radio female"
+                  id="female"
+                  value="female"
+                />
+                <label
+                  for="female"
+                  class="labelfemale"
+                  onclick="check('female')"
+                  >Female</label
+                >
+              </div>
+            </div>
+            <div class="formElement">
+              <label for="birthdate" class="label" id="birthdate"
+                >Birthdate</label
+              >
+              <input type="date" placeholder="" class="input" value="" />
+            </div>
+            <div class="formElement">
+              <label for="city" class="label" id="city">City</label>
+              <input
+                type="text"
+                placeholder="Delhi"
+                class="input"
+                value=""
+                onfocusin="changeLabelColor('city', this)"
+                onfocusout="removeLabelColor('city', this)"
+                onkeyup="changeFont(this)"
+              />
+            </div>
+            <div class="formElement">
+              <label for="country" class="label" id="country">Country</label>
+              <input
+                type="text"
+                placeholder="India"
+                class="input"
+                value=""
+                onfocusin="changeLabelColor('country', this)"
+                onfocusout="removeLabelColor('country', this)"
+                onkeyup="changeFont(this)"
+              />
+            </div>
+            <!-- <div class="formElement">
+              <label for="subscription" class="label">Subscription</label>
+              <input
+                type="text"
+                placeholder="Enter your subscription"
+                class="input"
+              />
+            </div> -->
+            <div class="formElement">
+              <div class="label"></div>
+              <div class="input btndiv">
+                <button class="btn cancel">
+                  Cancel
+                </button>
+                <button class="btn submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

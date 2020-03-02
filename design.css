@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,800&display=swap");
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ==================================== LEFT DIV ============================= */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  height: 100vh;
+  background-image: url("bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left .heading {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.1vw;
+}
+
+.left .heading h4 {
+  flex: 1;
+  color: #f0f8ff;
+  text-align: left;
+  padding-left: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.left .heading .fas {
+  flex: 1;
+  color: #f0f8ff;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.left .title {
+  flex: 8;
+  color: #f0f8ff;
+  padding-top: 10vw;
+}
+
+.left p {
+  font-size: 1.6vw;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.left .title h3 {
+  font-size: 3vw;
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+.left .footer {
+  flex: 2;
+  color: #f5f5f5;
+  font-family: "Open Sans";
+}
+
+/*  ======================= RIGHT DIV ================================= */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  height: 100vh;
+  background-color: #eaf0f1;
+  font-family: "Open Sans";
+}
+
+.right .title {
+  flex: 2;
+  text-align: center;
+}
+
+.right .title h3 {
+  font-size: 2vw;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color: #16a780;
+  font-weight: 700;
+}
+
+.right .title p {
+  font-size: 1vw;
+  letter-spacing: 2px;
+  margin-top: 0;
+  color: #2b2b52e1;
+}
+
+.right .formbox {
+  flex: 9;
+}
+
+.right .form {
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  /* margin-top: 40px; */
+  /* width: 28vw; */
+  margin: 6vh 12vw 0 12vw;
+}
+
+.right .form .formElement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.right .form .label {
+  flex: 2;
+  font-size: 0.8vw;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-right: 20px;
+  color: #2c3335;
+}
+
+.right .form .input {
+  flex: 8;
+  float: right;
+  /* width: 18vw; */
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #777575;
+}
+
+.right .form .blankdiv {
+  background-color: transparent;
+}
+
+.right input[type="radio"] {
+  display: none;
+}
+
+.labelmale {
+  margin-right: 20px;
+}
+
+.labelmale,
+.labelfemale {
+  color: #2c3335c7;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.male,
+input[type="radio"]:not(:checked) + .labelmale::before {
+  content: "\f222";
+  font-family: "FontAwesome";
+  background: #b8b8b8;
+  color: #f0f8ff;
+  margin: 0 10px 0 0;
+  padding: 4px 5px 4px 5px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.female,
+input[type="radio"]:not(:checked) + .labelfemale::before {
+  content: "\f221";
+  font-family: "FontAwesome";
+  background:#b8b8b8;
+  color: #f0f8ff;
+  margin: 0 10px 0 0;
+  padding: 4px 6px 4px 6px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.male,
+input[type="radio"]:checked + .labelmale::before {
+  content: "\f222";
+  font-family: "FontAwesome";
+  background: #e74292;
+  color: #f0f8ff;
+  margin: 0 10px 0 0;
+  padding: 4px 5px 4px 5px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.female,
+input[type="radio"]:checked + .labelfemale::before {
+  content: "\f221";
+  font-family: "FontAwesome";
+  background: #1287a5;
+  color: #f0f8ff;
+  margin: 0 10px 0 0;
+  padding: 4px 6px 4px 6px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+.form .formElement .btndiv {
+  display: flex;
+  background-color: transparent;
+}
+
+.formElement .btn {
+  flex: 1;
+  padding: 15px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #f0f8ff;
+}
+
+.formElement .cancel {
+  background-color: #2b2b52;
+}
+
+.formElement .submit {
+  background-color: #16a780;
+}
+
+.formElement .cancel:hover {
+  background-color: #2b2b52e1;
+}
+
+.formElement .submit:hover {
+  background-color: #16ac84d8;
+}
